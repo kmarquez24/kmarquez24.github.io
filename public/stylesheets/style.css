@@ -32,3 +32,11 @@ h1 {
     width: 50%;
     margin: 0 auto;
   }
+
+  #seccionhabilidades table {
+    margin: 0 auto;
+}
+
+#seccionhabilidades table td {
+    text-align: center;
+}
