@@ -27,3 +27,8 @@ h1 {
     color: #000;
     
   }
+
+  .seccion {
+    width: 50%;
+    margin: 0 auto;
+  }
