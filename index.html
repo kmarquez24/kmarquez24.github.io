@@ -1,156 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/stylesheets/style.css" />
-    <title>Curriculum Vitae</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/stylesheets/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <header>
-      <h1>Curriculum Vitae</h1>
-    </header>
+  <title>Curriculum Vitae</title>
+</head>
 
-    <!-- Nav: Inicio -->
-    <nav>
-      <ul>
-        <li><a href="#secciondatos">Datos Personales</a></li>
-        <li><a href="#seccionredes">Redes Sociales</a></li>
-        <li><a href="#seccionhabilidades">Habilidades</a></li>
-        <li><a href="#secciongaleria">Galería</a></li>
-        <li><a href="#seccioncontactenos">Contáctenos</a></li>
-      </ul>
-    </nav>
-    <!-- Nav: Fin -->
+<body>
 
-    <section id="secciondatos">
-      <h2>Datos personales</h2>
-      <span>
-        Nombres: <span>Kerwin Rafael</span>
-      </span>
+  <!-- Nav: Inicio -->
 
-      <span>
-        Apellidos: <span>Marquez Gonzalez</span>
-      </span>
+  <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#secciondatos">Datos personales</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-      <p>¡Hola! Soy Rafael Marquez, tengo experiencia en seguridad electronica respaldada por mas de 12 a#os de labores, actualmente lidero el departamento tecnico de una empresa.</p>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#seccionredes">Redes Sociales</a>
+          </li>
 
-    </section>
+          <li class="nav-item">
+            <a class="nav-link" href="#seccionhabilidades">Habilidades</a>
+          </li>
 
-    <section id="seccionredes">
-      <h2>Redes sociales</h2>
+          <li class="nav-item">
+            <a class="nav-link" href="#secciongaleria">Galeria</a>
+          </li>
 
-      <span><a href="https://www.linkedin.com/">LinkedIn</a></span>
-      <span><a href="https://github.com/">Github</a></span>
+          <li class="nav-item">
+            <a class="nav-link" href="#seccioncontactenos">Contacto</a>
+          </li>
 
-    </section>
-
-    <section id="seccionhabilidades">
-      <h2>Habilidades Profesionales</h2>
-      <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>ReactJS</li>
-        <li>Django</li>
-        <li>Express</li>
-      </ul>
-
-      <h2>Idiomas</h2>
-      <table>
-        <caption>Habilidad en idiomas</caption>
-        <tr>
-          <th></th>
-          <th>Básico</th>
-          <th>Intermedio</th>
-          <th>Avanzado</th>
-          <th>Nativo</th>
-        </tr>
-        <tr>
-          <th>Inglés</th>
-          <td></td>
-          <td></td>
-          <td>X</td>
-          <td></td>
-        </tr>
-        <tr>
-          <th>Español</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>X</td>
-        </tr>
-      </table>
-
-      <h2>Contenidos Transversales</h2>
-      <ol>
-        <li>Docker</li>
-        <li>AWS</li>
-        <li>CI/CD</li>
-        <li>Scrum</li>
-      </ol>
-    </section>
-
-    <aside id="secciongaleria">
-      <img src="public/images/reading.jpg" alt="Reading" width="30%">
-      <img
-        src="https://cdn.pixabay.com/photo/2015/05/29/19/18/cafe-789635_960_720.jpg"
-        alt="Foto de colaboración" width="30%">
-
-    </aside>
-
-    <section id="seccioncontactenos">
-      <footer>
-          <address>
-            Email: <a href="mailto:CORREO">CORREO</a><br>
-            Tel: <a href="tel:+TELEFONO">TELEFONO</a><br><br>
-            DIRECCIÓN: Ma#ongo<br>
-            CIUDAD: Guayaquil<br>
-            PAÍS: Ecuador
-          </address>
-      </footer>
-    
-      <h2>Contáctame</h2>
-      <h3>Sus datos</h3>
-
-      <form>
-        <label for="nombre">Nombres:</label><input type="text" name="nombre"
-          id="nombre">
-        <label for="nombre">Apellidos:</label><input type="text"
-          name="apellidos"
-          id="apellidos"><br>
-
-        <label for="edad">Seleccione su rango de edad</label><br>
-        <input type="radio" id="opcion1" name="edad" value="menor25"><label
-          for="si"> menor a 25 años</label>
-        <input type="radio" id="opcion2" name="edad" value="entre26y20"><label
-          for="si"> entre 26 y 30 años</label>
-        <input type="radio" id="opcion3" name="edad" value="mayor31"><label
-          for="si"> mayor a 31 años</label><br><br>
-
-        <label for="tiposervicio">Seleccione el tipo de servicio a consultar</label><br>
-        <input type="checkbox" name="frontend" id="frontend"><label
-          for="frontend">Frontend Dev</label><br>
-        <input type="checkbox" name="backend" id="backend"><label for="backend">Backend
-          Dev</label><br>
-        <input type="checkbox" name="scrum" id="scrum"><label for="scrum">Desarrollo
-          de software</label><br>
-        <input type="checkbox" name="cicd" id="cicd"><label for="cicd">CI/CD</label><br>
-        <button type="submit">Enviar</button>
-      </form>
-
-
-      <h3>Ubicación</h3>
-      <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9476515945717!2d-79.88169422600161!3d-2.1735951372376356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dcbc0fadfc3%3A0x4e86ed7df3dd0da0!2sTransfuel%20Group!5e0!3m2!1ses!2sec!4v1706316674875!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Texto a buscar" aria-label="Search">
+        </form>
       </div>
-      <br>
+    </div>
+  </nav>
+  <!-- Nav: Fin -->
 
-    </section>
 
-    
+  <header>
+    <h1>Curriculum Vitae</h1>
+  </header>
 
-  </body>
+  <section id="secciondatos">
+    <h2>Datos personales</h2>
+    <span>
+      Nombres: <span>Kerwin Rafael</span>
+    </span>
+
+    <span>
+      Apellidos: <span>Marquez Gonzalez</span>
+    </span>
+
+    <p contenido-principal>¡Hola! Soy Rafael Marquez, tengo experiencia en seguridad electronica respaldada por mas de 12 a#os de labores,
+      actualmente lidero el departamento tecnico de una empresa.</p>
+
+  </section>
+
+  <section id="seccionredes">
+    <h2>Redes sociales</h2>
+
+    <span><a href="https://www.linkedin.com/">LinkedIn</a></span>
+    <span><a href="https://github.com/">Github</a></span>
+
+  </section>
+
+  <section id="seccionhabilidades">
+    <h2>Habilidades Profesionales</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>ReactJS</li>
+      <li>Django</li>
+      <li>Express</li>
+    </ul>
+
+    <h2>Idiomas</h2>
+    <table>
+      <caption>Habilidad en idiomas</caption>
+      <tr>
+        <th></th>
+        <th>Básico</th>
+        <th>Intermedio</th>
+        <th>Avanzado</th>
+        <th>Nativo</th>
+      </tr>
+      <tr>
+        <th>Inglés</th>
+        <td></td>
+        <td></td>
+        <td>X</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Español</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+      </tr>
+    </table>
+
+    <h2>Contenidos Transversales</h2>
+    <ol>
+      <li>Docker</li>
+      <li>AWS</li>
+      <li>CI/CD</li>
+      <li>Scrum</li>
+    </ol>
+  </section>
+
+  <aside>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active imaagen">
+          <img src="public/images/test-image.jpg"  class="imagen" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="public/images/1.jpg" class="imagen" alt="...">
+        </div>
+        <div class="carousel-item container-sm">
+          <img src="public/images/programacion-wallpalper.jpg" class="imagen" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </aside>
+
+
+  <section id="seccioncontactenos">
+
+    <h2>Contáctame</h2>
+    <h3>Sus datos</h3>
+
+    <form class="container-fluid">
+      <div class="mb-3">
+        <label for="exampleInputName" class="form-label">Nombres:</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputLastName" class="form-label">Apellidos:</label>
+        <input type="text" class="form-control" id="exampleInputText">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPhone" class="form-label">Telefono:</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail" class="form-label">Correo electronico:</label>
+        <input type="mail" class="form-control" id="exampleInputText">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Seleccione su edad:</label>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="radio" name="edad" class="form-check-input" id="opcion1">
+        <label class="form-check-label" for="exampleCheck1">Menor a 25</label>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="radio" name="edad" class="form-check-input" id="opcion2">
+        <label class="form-check-label" for="exampleCheck1">Entre 26 y 30</label>
+      </div>
+
+
+      <div class="mb-3 form-check">
+        <input type="radio" name="edad" class="form-check-input" id="opcion3">
+        <label class="form-check-label" for="exampleCheck1">Mayor a 31</label>
+      </div>
+      <hr>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Seleccione el tipo de servicio a consultar:</label>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="radio" name="servicio" class="form-check-input" id="opcion4">
+        <label class="form-check-label" for="exampleCheck1">Frontend Dev.</label>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="radio" name="servicio" class="form-check-input" id="opcion5">
+        <label class="form-check-label" for="exampleCheck1">Backend Dev.</label>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="radio" name="servicio" class="form-check-input" id="opcion6">
+        <label class="form-check-label" for="exampleCheck1">Desarrollo Corporativo.</label>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="radio" name="servicio" class="form-check-input" id="opcion7">
+        <label class="form-check-label" for="exampleCheck1">IOT.</label>
+      </div>
+
+      <div class="d-grid col-12 align-items-center ">
+        <button class="btn btn-dark" type="button">Enviar Formulario</button>
+      </div>
+    </form>
+  </section>
+    <div class="mapa">
+        <h3>Ubicación</h3>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9476515945717!2d-79.88169422600161!3d-2.1735951372376356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dcbc0fadfc3%3A0x4e86ed7df3dd0da0!2sTransfuel%20Group!5e0!3m2!1ses!2sec!4v1706316674875!5m2!1ses!2sec"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br>
+      </div>
+   
+
+
+
+  <footer>
+
+    <div class="row bg-dark">
+      <div class="col-5 ms-3 fs-5 text-white justify-content-center py-3">
+        DIRECCION: Sauces
+        CIUDAD: Guayaquil
+        PAIS: Ecuador
+      </div>
+
+      <div class="col-5 fs-5 text-white justify-content-center py-3">
+        Email: rafael.marquez249@gmail.com
+        Tel: 0981735760
+      </div>
+    </div>
+
+
+
+  </footer>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+
 </html>
